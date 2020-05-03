@@ -10,11 +10,13 @@ UIWebView是什么坑？若提审时，收到这样的邮件
 
 如何检查，自己的应用是否包含UIWebView呢？
 
+
 1.最简单的方法，提审时，开发者邮箱是否收到这样的邮件。
 
 2.如何在提审前，自测呢？或者说，如何定位是，哪一家的framework导致的呢？
 
 这里提供stackoverflow上的一个答案，笔者就是通过这个方法，链接：https://stackoverflow.com/questions/57722616/itms-90809-deprecated-api-usage-apple-will-stop-accepting-submissions-of-app/57730461#57730461
+
 
 2个命令，稍加解释
 
