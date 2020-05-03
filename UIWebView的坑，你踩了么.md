@@ -1,4 +1,5 @@
 2020-03-29 fable说 Fable说
+
 4月，苹果将禁用UIWebView；新提审的应用，将不再被审核；老的应用可以持续到12月；建议提前做好应对措施。
 
 UIWebView是什么坑？若提审时，收到这样的邮件
@@ -22,6 +23,7 @@ cd ~/Library/Developer/Xcode/Archives/<date>/myapp.xcarchive/Products/Applicatio
 
 然后通过
 
+```
 nm myapp | grep UIWeb
 
 for framework inFrameworks/*.framework; do
@@ -31,6 +33,7 @@ for framework inFrameworks/*.framework; do
   nm $framework/$fname | grep UIWeb
 
 done
+```
 
 这段代码遍历查找framework中是否包含有UIWeb。
 
