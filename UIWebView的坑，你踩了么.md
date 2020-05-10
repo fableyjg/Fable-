@@ -1,4 +1,5 @@
 2020-03-29 fable说 Fable说
+
 4月，苹果将禁用UIWebView；新提审的应用，将不再被审核；老的应用可以持续到12月；建议提前做好应对措施。
 
 UIWebView是什么坑？若提审时，收到这样的邮件
@@ -9,11 +10,13 @@ UIWebView是什么坑？若提审时，收到这样的邮件
 
 如何检查，自己的应用是否包含UIWebView呢？
 
+
 1.最简单的方法，提审时，开发者邮箱是否收到这样的邮件。
 
 2.如何在提审前，自测呢？或者说，如何定位是，哪一家的framework导致的呢？
 
 这里提供stackoverflow上的一个答案，笔者就是通过这个方法，链接：https://stackoverflow.com/questions/57722616/itms-90809-deprecated-api-usage-apple-will-stop-accepting-submissions-of-app/57730461#57730461
+
 
 2个命令，稍加解释
 
@@ -22,6 +25,7 @@ cd ~/Library/Developer/Xcode/Archives/<date>/myapp.xcarchive/Products/Applicatio
 
 然后通过
 
+```
 nm myapp | grep UIWeb
 
 for framework inFrameworks/*.framework; do
@@ -31,6 +35,7 @@ for framework inFrameworks/*.framework; do
   nm $framework/$fname | grep UIWeb
 
 done
+```
 
 这段代码遍历查找framework中是否包含有UIWeb。
 
