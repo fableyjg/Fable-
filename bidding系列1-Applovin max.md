@@ -1,4 +1,3 @@
-昨天，Applovin收购欧美顶级手游开发商Machine Zone；今天来学一下Applovin max如何接入吧～
 
 # 1.bidding支持的渠道
 
