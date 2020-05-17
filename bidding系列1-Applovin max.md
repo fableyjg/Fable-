@@ -40,11 +40,11 @@ dependencies {
 ##3.2 其他家的接入
 不得不再次点赞max的文档，哪里不会点哪里，文档写的非常为开发者考虑。
 假设，在Android中需要接入facebook和admob。
-![image.png](https://upload-images.jianshu.io/upload_images/6080864-a99fa1902bf95ff5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://github.com/fableyjg/FableSay/blob/master/pic/applovin%20max%20gradle%20fb%20admob.png)
 
 勾选了facebook和admob，如何配置，文档已经动态给出结果。
 包括Android Manifest中需要配置的admob app id已经给出示例代码。
-![image.png](https://upload-images.jianshu.io/upload_images/6080864-34f0bf6bff90914a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://github.com/fableyjg/FableSay/blob/master/pic/applovin%20max%20admob%20appid.png)
 
 ``` gradle
 dependencies {
